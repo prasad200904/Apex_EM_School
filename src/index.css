@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue: #1E3A8A;
+  --orange: #F97316;
+}
+
+* { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fff;
+  color: #1a1a2e;
+}
+
+.font-display { font-family: 'Playfair Display', serif; }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+.animate-fadeUp { animation: fadeUp 0.7s ease both; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* WhatsApp pulse */
+.wa-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #25D366;
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+/* Navbar glass */
+.navbar-glass {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(30,58,138,0.15);
+}
+
+/* Section divider */
+.section-divider {
+  background: linear-gradient(90deg, transparent, #F97316, transparent);
+  height: 2px;
+  width: 80px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(135deg,
+    rgba(30,58,138,0.92) 0%,
+    rgba(30,58,138,0.75) 50%,
+    rgba(249,115,22,0.35) 100%
+  );
+}
+
+/* Form input */
+.form-input {
+  @apply w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-blue-900 focus:outline-none transition-colors font-body text-sm;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #1E3A8A; border-radius: 3px; }
