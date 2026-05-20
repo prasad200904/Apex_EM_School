@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import PageHero from '../components/PageHero'
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from '../icons'
 
 const initialForm = { name: '', phone: '', email: '', message: '' }
 

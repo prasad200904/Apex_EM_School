@@ -1,5 +1,5 @@
 import PageHero from '../components/PageHero'
-import { CheckCircle2, BookOpen, Microscope, Library, Dumbbell } from 'lucide-react'
+import { CheckCircle2, BookOpen, Microscope, Library, Dumbbell } from '../icons'
 
 const infra = [
   { icon: BookOpen, title: 'Smart Classrooms', desc: 'Air-ventilated classrooms with digital boards and modern seating for optimal learning.' },

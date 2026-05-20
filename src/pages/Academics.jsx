@@ -1,5 +1,5 @@
 import PageHero from '../components/PageHero'
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle2 } from '../icons'
 
 const grades = [
   { level: 'Pre-Primary', range: 'LKG & UKG', age: '3 – 5 years', icon: '🌱', subjects: ['Phonics & Literacy', 'Numeracy Basics', 'Activity-based Learning', 'Art & Craft', 'Physical Movement'] },

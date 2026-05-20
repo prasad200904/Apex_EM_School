@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { GraduationCap, MapPin, Phone, Clock, Mail } from 'lucide-react'
+import { GraduationCap, MapPin, Phone, Clock, Mail } from '../icons'
 
 export default function Footer() {
   return (

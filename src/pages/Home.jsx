@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BookOpen, Users, Award, TrendingUp, MapPin, Phone, Star, CheckCircle2, ChevronRight } from 'lucide-react'
+import { BookOpen, Users, Award, TrendingUp, MapPin, Phone, Star, CheckCircle2, ChevronRight } from '../icons'
 
 const stats = [
   { icon: Award, value: '15+', label: 'Years of Excellence' },

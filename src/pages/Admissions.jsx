@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import PageHero from '../components/PageHero'
-import { CheckCircle2, FileText, Send } from 'lucide-react'
+import { CheckCircle2, FileText, Send } from '../icons'
 
 const steps = [
   { num: '01', title: 'Submit Enquiry', desc: 'Fill the online enquiry form below or call us at 093939 99674 to express your interest.' },
